@@ -6,6 +6,32 @@ body {
   align-items: center;
   height: 100vh;
 }
+.user-input {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-input input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.user-input button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-input button:hover {
+  background: #45a049;
+}
 
 .game-container {
   background: #ffffff;
