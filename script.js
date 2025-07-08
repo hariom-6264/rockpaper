@@ -1,4 +1,17 @@
-function play(userChoice) {
+let playerName = "You";
+
+function startGame() {
+  const nameInput = document.getElementById("playerName").value.trim();
+  if (nameInput) {
+    playerName = nameInput;
+  }
+  document.getElementById("user-input").style.display = "none";
+  document.querySelector(".game-container").style.display = "block";
+}
+document.getElementById('user-choice').innerText = `${playerName}: ${userChoice}`;
+document.getElementById('user-choice').innerText = `${playerName}: -`;
+
+  function play(userChoice) {
   const choices = ['rock', 'paper', 'scissors'];
   const computerChoice = choices[Math.floor(Math.random() * 3)];
 
