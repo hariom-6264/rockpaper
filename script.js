@@ -18,17 +18,18 @@ function play(userChoice) {
 
   let result = "";
 
-  if (userChoice === computerChoice) {
-    result = "It's a Draw!";
-  } else if (
-    (userChoice === 'rock' && computerChoice === 'scissors') ||
-    (userChoice === 'paper' && computerChoice === 'rock') ||
-    (userChoice === 'scissors' && computerChoice === 'paper')
-  ) {
-    result = "You Win!";
-  } else {
-    result = "You Lose!";
-  }
+ if (userChoice === computerChoice) {
+  result = "It's a Draw!";
+} else if (
+  (userChoice === 'rock' && computerChoice === 'scissors') ||
+  (userChoice === 'paper' && computerChoice === 'rock') ||
+  (userChoice === 'scissors' && computerChoice === 'paper')
+) {
+  result = `${playerName} Wins!`;
+} else {
+  result = `${playerName} Loses!`;
+}
+
 
   document.getElementById('winner').innerText = `Result: ${result}`;
   document.getElementById('choices').style.display = 'none';
